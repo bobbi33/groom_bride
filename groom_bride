@@ -1,0 +1,23 @@
+#include "stdafx.h"
+
+#define A  1
+#define B  2
+#define C  3
+
+int main(){
+
+	int x = 0, y = 0, z = 0;
+
+	for(x = 1; x <= 3; x++){
+		for(y = 1; y <= 3; y++){
+			for(z = 1; z <= 3; z++){
+				if((x != A) && (x != C) &&( z != C) && ( x != y) && (x != z) && (y != z)){
+					printf("%d %d %d\n", x, y, z);
+				}
+			}
+		}
+	}
+
+	return 0;
+}
+
